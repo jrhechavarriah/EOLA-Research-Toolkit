@@ -1,0 +1,54 @@
+{
+  "release_candidate": "EOLA Research Toolkit v2.0.0",
+  "generated_files": [
+    {
+      "path": "reports/final/tables/Table_1_DIB_exact_reproduction.csv",
+      "sha256": "6c70346a3ee07ddebf59b92de958464c8951b8fef21aabfb5a3d88dc0fd4898a"
+    },
+    {
+      "path": "reports/final/tables/Table_2_robust_model_comparison.csv",
+      "sha256": "82f129e2e8ad3ab6a876d97aaebbf5835d291abd8a41c862cc721de1f3eb46d3"
+    },
+    {
+      "path": "reports/final/tables/Table_3_robust_pareto_frontier.csv",
+      "sha256": "3a55029a1df5a6aa1a15da3ef02e234d2609254350c3279eea28bd92594f5b66"
+    },
+    {
+      "path": "reports/final/tables/Table_4_tau_sensitivity.csv",
+      "sha256": "8a4a3a32c12886a1e14fa105ad8575f5031887a3a3e43e653d213ded2a64f350"
+    },
+    {
+      "path": "reports/final/tables/Table_5_explanation_disparity.csv",
+      "sha256": "bf3c2c82a878e7342ddf26f1f2d2238f1cc1117e7f97981d3e4401d94cf59e37"
+    },
+    {
+      "path": "reports/final/tables/Table_6_GEDI_summary.csv",
+      "sha256": "05e8b861ad4451c6558cf16b80b8ee3fab73d0060f47367242062dfa4bff52f7"
+    },
+    {
+      "path": "figures/final/Figure_1_robust_model_comparison.png",
+      "sha256": "3904de793ca8cf5793b86ef1669fcabcbf67dc42565cc80e70097a8f8d5149aa"
+    },
+    {
+      "path": "figures/final/Figure_2_pareto_frontier.png",
+      "sha256": "c518d6c836097b3031cdf7683e66cd4986db862c6749e114f416765f57779b8f"
+    },
+    {
+      "path": "figures/final/Figure_3_SHAP_global_importance.png",
+      "sha256": "4887c90168f56a3b74cbb77a6d3cc3adb6fbe35f10f852ac8070353300ff7411"
+    },
+    {
+      "path": "figures/final/Figure_4_explanation_disparity.png",
+      "sha256": "5b9d9eca77c8140fe80fa1c0aea0b1001dde6a42f32f9d10e52b866e8c841e72"
+    },
+    {
+      "path": "figures/final/Figure_5_GEDI_stability.png",
+      "sha256": "df5152a95e8c97881083b3d93b25b921916ecf63df22e1a5005c3b8aa06de74c"
+    },
+    {
+      "path": "reports/final/EOLA_CANONICAL_RESULTS_v2.0.0.json",
+      "sha256": "9e1a6f858fe9210cd35ee12ef6ef4958a4f3db76230e4778dbe6ddd375f923ce"
+    }
+  ],
+  "final_scientific_freeze_ok": true
+}

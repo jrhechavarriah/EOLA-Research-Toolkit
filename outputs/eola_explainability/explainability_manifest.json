@@ -1,0 +1,30 @@
+{
+  "dataset_version": "v1.0.4",
+  "dataset_doi": "10.5281/zenodo.22015963",
+  "dataset_sha256": "8466b02d028be1fb11c39a320517d0d388580436b5278f949d60e05ee06899ac",
+  "reference_model": "LogisticRegression",
+  "gender_mode": "gender_blind",
+  "candidate_predictors_before_zero_variance_filter": 15,
+  "zero_variance_predictors": [
+    "FACULTY"
+  ],
+  "effective_predictor_count": 14,
+  "decision_threshold": 0.5,
+  "threshold_note": "SHAP values explain the continuous model decision function and are independent of the classification threshold.",
+  "shap_method": "closed-form interventional linear SHAP",
+  "shap_scale": "log-odds / decision-function scale",
+  "background": "mean transformed training vector for each seed",
+  "aggregation": "encoded SHAP contributions summed to original-variable level",
+  "normalized_disparity_definition": "(mean_SHAP_Female - mean_SHAP_Male) / global_mean_absolute_SHAP",
+  "gedi_definition": "mean absolute normalized explanation disparity across original predictors",
+  "weighted_gedi_definition": "importance-weighted mean absolute normalized explanation disparity",
+  "n_seeds": 30,
+  "expected_feature_rows": 420,
+  "observed_feature_rows": 420,
+  "expected_gedi_rows": 30,
+  "observed_gedi_rows": 30,
+  "max_id_overlap": 0,
+  "max_shap_reconstruction_error": 1.0658141036401503e-14,
+  "interpretation_constraint": "Subgroup-associated differences in model attribution patterns; not causal evidence of discrimination or proxy effects.",
+  "explainability_contract_ok": true
+}

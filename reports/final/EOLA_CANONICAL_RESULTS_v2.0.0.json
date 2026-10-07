@@ -1,0 +1,47 @@
+{
+  "release_candidate": "EOLA Research Toolkit v2.0.0",
+  "freeze_utc": "2026-10-07T16:17:06.061274+00:00",
+  "dataset": {
+    "version": "v1.0.4",
+    "doi": "10.5281/zenodo.22015963",
+    "sha256": "8466b02d028be1fb11c39a320517d0d388580436b5278f949d60e05ee06899ac",
+    "rows": 12632,
+    "columns": 18
+  },
+  "feature_contract": {
+    "candidate_predictors": 16,
+    "zero_variance_predictors": [
+      "FACULTY"
+    ],
+    "gender_aware_predictors": 15,
+    "gender_blind_effective_predictors": 14
+  },
+  "research_reference_configuration": {
+    "model": "LogisticRegression",
+    "gender_mode": "gender_blind",
+    "threshold": 0.5,
+    "research_tau": 0.05,
+    "balanced_accuracy_mean": 0.9513299293541744,
+    "macro_f1_mean": 0.8004750939690016,
+    "roc_auc_mean": 0.990792,
+    "equalized_odds_p95": 0.0434006184213137
+  },
+  "explainability": {
+    "gedi_mean": 0.11359739811886924,
+    "gedi_p95": 0.14451296289132723,
+    "weighted_gedi_mean": 0.07097330707254572,
+    "weighted_gedi_p95": 0.09136661957839254,
+    "max_shap_reconstruction_error": 1.0658141036401503e-14
+  },
+  "contracts": {
+    "dib_reproduction": true,
+    "multiseed": true,
+    "threshold_pareto": true,
+    "explainability": true
+  },
+  "interpretation_constraints": [
+    "TARGET_RISK is a cross-sectional contemporaneous administrative proxy, not a prospectively observed dropout outcome.",
+    "The 0.500 threshold is a research reference configuration, not an operational institutional decision threshold.",
+    "Explanation disparities represent subgroup-associated differences in model attributions and are not causal evidence of discrimination or proxy effects."
+  ]
+}

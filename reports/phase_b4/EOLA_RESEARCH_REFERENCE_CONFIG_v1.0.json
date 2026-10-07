@@ -1,0 +1,19 @@
+{
+  "version": "EOLA research reference configuration v1.0",
+  "selection_basis": "30-seed robust threshold/Pareto analysis after zero-variance filtering",
+  "model": "LogisticRegression",
+  "gender_mode": "gender_blind",
+  "candidate_predictors_before_zero_variance_filter": 16,
+  "zero_variance_predictors": [
+    "FACULTY"
+  ],
+  "effective_predictor_count": 14,
+  "threshold": 0.5,
+  "research_tau": 0.05,
+  "balanced_accuracy_mean": 0.95133,
+  "macro_f1_mean": 0.800475,
+  "roc_auc_mean": 0.990792,
+  "equalized_odds_p95": 0.043401,
+  "operational_status": "RESEARCH_ONLY_NOT_PROSPECTIVELY_VALIDATED",
+  "institutional_threshold": "NOT_DEFINED"
+}

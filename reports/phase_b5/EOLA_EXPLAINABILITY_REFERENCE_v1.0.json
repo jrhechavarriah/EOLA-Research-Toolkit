@@ -1,0 +1,14 @@
+{
+  "version": "EOLA explainability reference v1.0",
+  "model": "LogisticRegression",
+  "gender_mode": "gender_blind",
+  "effective_predictor_count": 14,
+  "n_seeds": 30,
+  "shap_scale": "log-odds",
+  "gedi_mean": 0.11359739811886924,
+  "gedi_p95": 0.14451296289132723,
+  "weighted_gedi_mean": 0.07097330707254572,
+  "weighted_gedi_p95": 0.09136661957839254,
+  "max_shap_reconstruction_error": 1.066e-14,
+  "interpretation": "Subgroup-associated attribution differences; not causal evidence of discrimination or proxy effects."
+}

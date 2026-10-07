@@ -1,0 +1,13 @@
+{
+  "audit": "EOLA zero-variance predictor audit v1.0",
+  "dataset_rows": 12632,
+  "candidate_predictors": 16,
+  "zero_variance_predictors": [
+    "FACULTY"
+  ],
+  "FACULTY_unique_values": 1,
+  "FACULTY_value": "Online Undergraduate Faculty",
+  "gender_aware_predictors": 15,
+  "gender_blind_predictors": 14,
+  "action": "FACULTY excluded from EOLA modeling; retained in DIB reproduction for exact published benchmark comparability"
+}

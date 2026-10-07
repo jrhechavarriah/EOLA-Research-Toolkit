@@ -1,0 +1,76 @@
+project_name: EOLA_Real_Data
+project_root: .
+dataset:
+  filename: ecotec_online_student_risk.csv
+  version: v1.0.4
+  doi: 10.5281/zenodo.22015963
+  source_url: https://raw.githubusercontent.com/jrhechavarriah/ECOTEC_Online_Student_Risk_Dataset/v1.0.4/data/ecotec_online_student_risk.csv
+  expected_rows: 12632
+  expected_columns: 18
+  expected_sha256: 8466b02d028be1fb11c39a320517d0d388580436b5278f949d60e05ee06899ac
+  expected_column_names:
+  - PUBLIC_RECORD_ID
+  - FACULTY
+  - DEGREE_PROGRAM
+  - CURRICULUM_YEAR
+  - GENDER
+  - AGE
+  - MARITAL_STATUS
+  - ETHNICITY
+  - DISABILITY
+  - INSTITUTION_TYPE
+  - NATIONALITY_COUNTRY
+  - TRANSFER_STUDENT_FLAG
+  - PAYMENT_PLAN
+  - ONLINE_ADMISSION_TYPE
+  - PAYMENT_DEFERRAL_TYPE
+  - SCHOLARSHIP_NAME
+  - TARGET_RISK
+  - REGION
+modeling:
+  target: TARGET_RISK
+  identifier: PUBLIC_RECORD_ID
+  primary_sensitive_attribute: GENDER
+  split_test_size: 0.3
+  baseline_seed: 42
+  multiseed_range:
+  - 0
+  - 29
+  default_threshold: 0.5
+interpretation:
+  target_constraint: Cross-sectional contemporaneous administrative proxy; not prospectively
+    observed dropout.
+governance:
+  threshold_grid:
+  - 0.3
+  - 0.325
+  - 0.35
+  - 0.375
+  - 0.4
+  - 0.425
+  - 0.45
+  - 0.475
+  - 0.5
+  - 0.525
+  - 0.55
+  - 0.575
+  - 0.6
+  - 0.625
+  - 0.65
+  - 0.675
+  - 0.7
+  tau_values:
+  - 0.02
+  - 0.03
+  - 0.05
+  - 0.08
+  - 0.1
+  max_balanced_accuracy_loss: 0.01
+feature_policy:
+  candidate_predictors: 16
+  zero_variance_filter: true
+  expected_zero_variance_predictors:
+  - FACULTY
+  gender_aware_predictors: 15
+  gender_blind_exclude_sensitive_attribute: true
+  gender_blind_effective_predictors: 14

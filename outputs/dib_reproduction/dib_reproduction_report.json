@@ -1,0 +1,179 @@
+{
+  "dataset_version": "v1.0.4",
+  "dataset_doi": "10.5281/zenodo.22015963",
+  "n_rows": 12632,
+  "n_candidate_predictors": 16,
+  "n_train": 8842,
+  "n_test": 3790,
+  "seed": 42,
+  "test_size": 0.3,
+  "models": {
+    "LogisticRegression": {
+      "metrics": {
+        "accuracy": 0.9406332453825857,
+        "f1_score": 0.9676770578939807,
+        "roc_auc": 0.9885590975095762,
+        "balanced_accuracy": 0.945842619670721,
+        "macro_f1": 0.8020937793508676,
+        "class_0_precision": 0.47815533980582525,
+        "class_0_recall": 0.9516908212560387,
+        "class_0_f1": 0.6365105008077544,
+        "class_0_support": 207,
+        "class_1_precision": 0.9970396684428656,
+        "class_1_recall": 0.9399944180854033,
+        "class_1_f1": 0.9676770578939807,
+        "class_1_support": 3583,
+        "confusion_matrix": [
+          [
+            197,
+            10
+          ],
+          [
+            215,
+            3368
+          ]
+        ]
+      },
+      "comparison_to_published": {
+        "accuracy": {
+          "observed": 0.9406332453825857,
+          "published": 0.940633,
+          "absolute_difference": 2.4538258569517524e-07,
+          "pass": true
+        },
+        "f1_score": {
+          "observed": 0.9676770578939807,
+          "published": 0.967677,
+          "absolute_difference": 5.7893980720535865e-08,
+          "pass": true
+        },
+        "roc_auc": {
+          "observed": 0.9885590975095762,
+          "published": 0.988559,
+          "absolute_difference": 9.7509576191257e-08,
+          "pass": true
+        },
+        "balanced_accuracy": {
+          "observed": 0.945842619670721,
+          "published": 0.945843,
+          "absolute_difference": 3.803292789594792e-07,
+          "pass": true
+        },
+        "macro_f1": {
+          "observed": 0.8020937793508676,
+          "published": 0.802094,
+          "absolute_difference": 2.206491324097115e-07,
+          "pass": true
+        },
+        "confusion_matrix": {
+          "observed": [
+            [
+              197,
+              10
+            ],
+            [
+              215,
+              3368
+            ]
+          ],
+          "published": [
+            [
+              197,
+              10
+            ],
+            [
+              215,
+              3368
+            ]
+          ],
+          "pass": true
+        },
+        "all_pass": true
+      }
+    },
+    "RandomForestClassifier": {
+      "metrics": {
+        "accuracy": 0.9796833773087071,
+        "f1_score": 0.9892712832659886,
+        "roc_auc": 0.9843376060597482,
+        "balanced_accuracy": 0.889114727221002,
+        "macro_f1": 0.8991021428736891,
+        "class_0_precision": 0.8316326530612245,
+        "class_0_recall": 0.7874396135265701,
+        "class_0_f1": 0.8089330024813896,
+        "class_0_support": 207,
+        "class_1_precision": 0.9877573734001113,
+        "class_1_recall": 0.990789840915434,
+        "class_1_f1": 0.9892712832659886,
+        "class_1_support": 3583,
+        "confusion_matrix": [
+          [
+            163,
+            44
+          ],
+          [
+            33,
+            3550
+          ]
+        ]
+      },
+      "comparison_to_published": {
+        "accuracy": {
+          "observed": 0.9796833773087071,
+          "published": 0.979683,
+          "absolute_difference": 3.773087071667902e-07,
+          "pass": true
+        },
+        "f1_score": {
+          "observed": 0.9892712832659886,
+          "published": 0.989271,
+          "absolute_difference": 2.832659885543265e-07,
+          "pass": true
+        },
+        "roc_auc": {
+          "observed": 0.9843376060597482,
+          "published": 0.984338,
+          "absolute_difference": 3.939402518637891e-07,
+          "pass": true
+        },
+        "balanced_accuracy": {
+          "observed": 0.889114727221002,
+          "published": 0.889115,
+          "absolute_difference": 2.72778997945089e-07,
+          "pass": true
+        },
+        "macro_f1": {
+          "observed": 0.8991021428736891,
+          "published": 0.899102,
+          "absolute_difference": 1.4287368910181897e-07,
+          "pass": true
+        },
+        "confusion_matrix": {
+          "observed": [
+            [
+              163,
+              44
+            ],
+            [
+              33,
+              3550
+            ]
+          ],
+          "published": [
+            [
+              163,
+              44
+            ],
+            [
+              33,
+              3550
+            ]
+          ],
+          "pass": true
+        },
+        "all_pass": true
+      }
+    }
+  },
+  "dib_reproduction_pass": true
+}

@@ -1,0 +1,106 @@
+# ============================================================
+# EOLA Research Toolkit
+# Repository protection rules
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# LOCAL / NON-PUBLIC DATA
+# ------------------------------------------------------------
+
+data/raw/
+data/interim/
+data/processed/
+
+# Keep metadata only when explicitly reviewed
+# data/metadata/ is not globally ignored
+
+# ------------------------------------------------------------
+# LOCAL MACHINE / VALIDATION OUTPUTS
+# ------------------------------------------------------------
+
+outputs/workstation_validation.json
+
+# ------------------------------------------------------------
+# INTERNAL IP / PROTECTED DOCUMENTATION
+# ------------------------------------------------------------
+
+docs/ip/
+docs/archive/
+docs/NEXT_STEPS.md
+
+# ------------------------------------------------------------
+# HISTORICAL / DEVELOPMENTAL REPORTS
+# ------------------------------------------------------------
+
+reports/archive_pre_zero_variance/
+
+# ------------------------------------------------------------
+# MODELS / SERIALIZED OBJECTS
+# ------------------------------------------------------------
+
+models/
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+
+# ------------------------------------------------------------
+# RELEASE WORKSPACE
+# ------------------------------------------------------------
+
+release/staging/
+release/public/
+
+# ------------------------------------------------------------
+# TEMPORARY FILES
+# ------------------------------------------------------------
+
+*.tmp
+*.temp
+*.part
+*.bak
+*.log
+
+# ------------------------------------------------------------
+# CREDENTIALS / SECRETS
+# ------------------------------------------------------------
+
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+token*

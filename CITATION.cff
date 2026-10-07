@@ -1,40 +1,46 @@
 cff-version: 1.2.0
-title: "EOLA Fairness Toolkit: Reproducible Fairness-Aware and Explainable Learning Analytics Architecture"
-message: "If you use this software, please cite it as follows."
+message: >-
+  If you use the EOLA Research Toolkit in research, please cite the
+  software release and the associated dataset.
+
+title: "EOLA Research Toolkit"
 type: software
+version: "2.0.0"
+doi: "10.5281/zenodo.23218886"
+license: "BSD-3-Clause"
+
 authors:
-  - family-names: Hechavarria-Hernandez
-    given-names: Jesus Rafael
-    affiliation: Universidad ECOTEC
-    orcid: https://orcid.org/0000-0002-9013-8665
-  - family-names: Smarandache
-    given-names: Florentin
-    affiliation: University of New Mexico
-    orcid: https://orcid.org/0000-0002-5560-5926
+  - family-names: "Hechavarria-Hernandez"
+    given-names: "Jesus Rafael"
+    orcid: "https://orcid.org/0000-0002-9013-8665"
 
-version: 1.0.0
-doi: 10.5281/zenodo.18842293
-date-released: 2026-03-02
-url: https://github.com/jrhechavarriah/EOLA-Fairness-Toolkit
-repository-code: https://github.com/jrhechavarriah/EOLA-Fairness-Toolkit
-license: MIT
+abstract: >-
+  The EOLA Research Toolkit is a reproducible computational framework
+  for fairness-aware and explainable student-risk modeling in online
+  higher education. It provides canonical dataset acquisition and
+  integrity verification, exact reproduction of published baseline
+  experiments, 30-seed robust predictive and subgroup-fairness
+  evaluation, threshold and Pareto sensitivity analysis, and
+  explanation-level disparity analysis using GEDI and Weighted GEDI.
+  The toolkit represents the scientific and reproducibility layer only
+  and is not an institutional production decision system.
+
 keywords:
-  - Learning Analytics
-  - Early Warning Systems
-  - Algorithmic Fairness
-  - Explainable AI
+  - learning analytics
+  - fairness-aware machine learning
+  - explainable artificial intelligence
+  - higher education
+  - student risk
+  - reproducible research
   - SHAP
-  - Multi-Objective Optimization
-  - Higher Education
-  - Reproducible Research
+  - equalized odds
+  - GEDI
+  - responsible AI
 
-preferred-citation:
-  type: article
-  authors:
-    - family-names: Hechavarria-Hernandez
-      given-names: Jesus Rafael
-    - family-names: Smarandache
-      given-names: Florentin
-  title: "A Reproducible Fairness-Aware and Explainable Learning Analytics Architecture for Multi-Objective Early Warning Systems in Online Higher Education"
-  journal: "Education and Information Technologies". https://doi.org/10.5281/zenodo.18842293
-  year: 2026
+references:
+  - type: dataset
+    title: "ECOTEC_Online Student Risk Dataset"
+    version: "v1.0.4"
+    doi: "10.5281/zenodo.22015963"
+
+repository-code: "https://github.com/jrhechavarriah/EOLA-Research-Toolkit"
